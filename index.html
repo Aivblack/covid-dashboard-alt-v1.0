@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <title>Covid-19 Case Tracker - UPHSD</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="landing-page">
+        <header>
+            <h1>COVID-19 CASE TRACKER</h1>
+            <h2>PHILIPPINES</h2>
+        </header>
+
+        <aside>
+            <section class="cases">
+                <div class="population">
+                    <p id="population-count"></p>
+                    <h3>Population</h3>
+                </div>
+                <div class="deaths-today">
+                    <p id="deaths-today-count"></p>
+                    <h3>Deaths today</h3>
+                </div>
+                <div class="new-case-today">
+                    <p id="new-cases-today"></p>
+                    <h3>New cases today</h3>
+                </div>
+            </section>
+            <canvas class="aside-graph"></canvas>
+        </aside>
+
+        <canvas class="main-graph"></canvas>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
