@@ -12,8 +12,7 @@
   height: 100vh;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header header"
- "aside canvas";
+      grid-template-areas: "header header" "aside canvas";
   -ms-grid-columns: 1fr 4fr;
       grid-template-columns: 1fr 4fr;
   -ms-grid-rows: .5fr 4fr;
@@ -116,5 +115,68 @@
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: canvas;
+}
+
+.other-country {
+  background-color: #FFF;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.other-country .country-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.other-country .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5em;
+}
+
+.other-country button {
+  margin-top: 1em;
+  width: 100px;
+  height: 20px;
+}
+
+.other-country select {
+  width: 900px;
+  height: 30px;
+}
+
+.other-country h2 {
+  margin-top: 5em;
+  margin-left: 8em;
+}
+
+.other-country h3 {
+  color: #CDB4B4;
+}
+
+.other-country p {
+  color: #3F3F3F;
+  font-size: 36px;
 }
 /*# sourceMappingURL=style.css.map */
