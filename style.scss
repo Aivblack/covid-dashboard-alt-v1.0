@@ -99,8 +99,11 @@
     
     button {
         margin-top: 1em;
-        width: 100px;
-        height: 20px;
+        width: 900px;
+        height: 30px;
+        background-color: #E7E7E7;
+        color: black;
+        border: .2px black solid;
     }
 
     select {
@@ -109,8 +112,9 @@
     }
 
     h2 {
-        margin-top: 5em;
-        margin-left: 8em;
+       align-self: center;
+       margin-top: 5em;
+       font-size: 48px;
     }
 
     h3 {

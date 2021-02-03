@@ -70,10 +70,10 @@ function selectCountry(){
         let y = document.getElementById("country").options;
         targetCountryName.innerText = y[targetIndex].text;
 
-        totalCases.innerText = data.data[index].latest_data.confirmed;
-        activeCases.innerText = data.data[index].latest_data.critical;
-        recoveries.innerText = data.data[index].latest_data.recovered;
-        deaths.innerText = data.data[index].latest_data.deaths;
+        totalCases.innerText = data.data[index].latest_data.confirmed.toLocaleString();
+        activeCases.innerText = data.data[index].latest_data.critical.toLocaleString();
+        recoveries.innerText = data.data[index].latest_data.recovered.toLocaleString();
+        deaths.innerText = data.data[index].latest_data.deaths.toLocaleString();
     });
 }
 

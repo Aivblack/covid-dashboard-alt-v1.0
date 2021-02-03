@@ -157,8 +157,11 @@
 
 .other-country button {
   margin-top: 1em;
-  width: 100px;
-  height: 20px;
+  width: 900px;
+  height: 30px;
+  background-color: #E7E7E7;
+  color: black;
+  border: .2px black solid;
 }
 
 .other-country select {
@@ -167,8 +170,11 @@
 }
 
 .other-country h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-top: 5em;
-  margin-left: 8em;
+  font-size: 48px;
 }
 
 .other-country h3 {
