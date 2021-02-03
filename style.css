@@ -12,7 +12,8 @@
   height: 100vh;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header header" "aside canvas";
+      grid-template-areas: "header header"
+ "aside canvas";
   -ms-grid-columns: 1fr 4fr;
       grid-template-columns: 1fr 4fr;
   -ms-grid-rows: .5fr 4fr;
