@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.landing-page {
+    background-color: #F4F4F4;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "aside canvas";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: .5fr 4fr;
+
+    header {
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            margin-left: 2em;
+            color: #3F3F3F;
+        }
+
+        h2 {
+            margin-right: 2em;
+            color: #3F3F3F;
+        }
+    }
+
+    aside {
+        grid-area: aside;
+        display: flex;
+        flex-direction: column;
+
+        .box {
+            height: 100px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 1em;
+            
+            h3 {
+                color: #CDB4B4;
+                font-size: 24px;
+            }
+
+            p {
+                color: #3F3F3F;
+                font-size: 36px;
+            }
+        }
+
+        .cases {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .aside-canvas {
+            flex-grow: 1;
+        }
+    }
+
+    .main-canvas {
+        grid-area: canvas;
+    }
+}
